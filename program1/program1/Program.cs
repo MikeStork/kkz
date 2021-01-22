@@ -24,7 +24,7 @@ namespace program1
                 {
                     Console.Write(tab[j][i] + "\t");
                 }
-                Console.WriteLine("");
+                Console.WriteLine(""); 
             }
         }
     }
