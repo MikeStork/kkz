@@ -69,7 +69,6 @@ namespace program2
             Console.Beep(329, 250);
             Console.Beep(369, 500);
             Console.Beep(37, 50);
-            Console.Beep(37, 50);
             Console.Beep(294, 100);
             Console.Beep(294, 50);
             Console.Beep(329, 750);

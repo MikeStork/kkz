@@ -1,5 +1,4 @@
 ﻿using System;
-
 namespace program1
 {
     class Program
@@ -36,6 +35,7 @@ namespace program1
             int[][] tab2dJ = new int[2][];
             tab2dJ[0] = new int[] { 5, 69, 5, -45 };
             tab2dJ[1] = new int[] { -9, 9};
+           
             foreach(int [] tmpTab in tab2dJ)
             {
                 foreach(int tmp in tmpTab)
@@ -43,6 +43,7 @@ namespace program1
                     Console.WriteLine(tmp);
                 }
             }
+            
             //z5
             int[,] tabliczka = new int[10, 10];
             for (int i = 0; i < tabliczka.GetLength(0); i++)

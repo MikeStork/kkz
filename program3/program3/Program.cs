@@ -10,7 +10,7 @@ namespace program3
             //Console.WriteLine("Hello World!");
             //dynamic wynik = test(ReturnType._double);
             //Console.WriteLine(wynik);
-
+            string[] tab = new string[] { "asda" };
             //z2
             double a, b;
             char oper;
@@ -19,7 +19,7 @@ namespace program3
                 string wczytane = Console.ReadLine();
                 if (wczytane != "q")
                 {
-                    double wynik;
+                    
 
                     bool isOk = double.TryParse(wczytane, out a);
                     if (!isOk)
@@ -67,6 +67,7 @@ namespace program3
                 }
             }
         }
+        
         static dynamic test(ReturnType returnType)
         {
             string tmp = Console.ReadLine();
