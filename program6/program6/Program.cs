@@ -53,25 +53,28 @@ namespace program6
             //}
 
             //z4
-             
-            int[] tab = new int[10];
-            Random r = new Random();
-            for (int i = 0; i < 10; i++)
-            {
-                tab[i] = r.Next(1, 10);
-            }
-            for(int j = 0; j<tab.Length; j++)
-            {
-                if (Array.FindAll<int>(tab, x => x == tab[j]).Length > tab.Length / 2)
-                {
-                    Console.WriteLine("MA");
-                }
-                   
-                        
-                
-                
-            }
-            
+
+
+            //int[] tab = new int[10];
+            //Random r = new Random();
+            //for (int i = 0; i < 10; i++)
+            //{
+            //    tab[i] = r.Next(1, 10);
+            //}
+            //for (int j = 0; j < tab.Length; j++)
+            //{
+            //    if (Array.FindAll<int>(tab, x => x == tab[j]).Length > tab.Length / 2)
+            //    {
+            //        Console.WriteLine("MA ${0}", tab[j]);
+            //    }
+            //}
+
+
+            //z5
+            int[] tab = new int[] { 10, 20, 30, 40, 50, 60 };
+            int szukane = Convert.ToInt32(Console.ReadLine());
+            int[] wyniki = Array.FindAll<int>(tab, x => x == szukane);
+
         }
     }
 }
