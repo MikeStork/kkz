@@ -73,7 +73,7 @@ namespace program7
             //}
 
 
-            //3
+            ////3
             int[] tab = new int[6];
             Random r = new Random();
             int i = 0;
@@ -109,6 +109,7 @@ namespace program7
             Console.Beep(556, 125);
             Console.Beep(656, 125);
             Console.Beep(440, 250);
+
 
         }
     }
