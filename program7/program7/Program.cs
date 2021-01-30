@@ -74,43 +74,96 @@ namespace program7
 
 
             ////3
-            int[] tab = new int[6];
-            Random r = new Random();
-            int i = 0;
-            int a;
+            //int[] tab = new int[6];
+            //Random r = new Random();
+            //int i = 0;
+            //int a;
 
-            while (i < tab.Length)
-            {
-                a = r.Next(1, 49);
-                int wyn = Array.IndexOf(tab, a);
-                if (wyn == -1)
-                {
-                    Console.Beep(440, 250);
-                    Console.WriteLine(a);
-                    tab[i] = a;
-                    i++;
-                }
-            }
-            Console.WriteLine("Wpisz swoje liczby: ");
-            int trafiles = 6;
-            for (int x = 0; x < 6; x++)
-            {
-                int h = Convert.ToInt32(Console.ReadLine());
-                Console.Beep(440, 125);
-                Console.Beep(756, 125);
-                int d = Array.IndexOf(tab, h);
-                if (d == -1)
-                {
-                    trafiles--;
-                }
-            }
-            Console.WriteLine("Trafiłeś: {0}!", trafiles);
-            Console.Beep(440, 250);
-            Console.Beep(556, 125);
-            Console.Beep(656, 125);
-            Console.Beep(440, 250);
+            //while (i < tab.Length)
+            //{
+            //    a = r.Next(1, 49);
+            //    int wyn = Array.IndexOf(tab, a);
+            //    if (wyn == -1)
+            //    {
+            //        Console.Beep(440, 250);
+            //        Console.WriteLine(a);
+            //        tab[i] = a;
+            //        i++;
+            //    }
+            //}
+            //Console.WriteLine("Wpisz swoje liczby: ");
+            //int trafiles = 6;
+            //for (int x = 0; x < 6; x++)
+            //{
+            //    int h = Convert.ToInt32(Console.ReadLine());
+            //    Console.Beep(440, 125);
+            //    Console.Beep(756, 125);
+            //    int d = Array.IndexOf(tab, h);
+            //    if (d == -1)
+            //    {
+            //        trafiles--;
+            //    }
+            //}
+            //Console.WriteLine("Trafiłeś: {0}!", trafiles);
+            //Console.Beep(440, 250);
+            //Console.Beep(556, 125);
+            //Console.Beep(656, 125);
+            //Console.Beep(440, 250);
 
+            //z4
+            //Random r = new Random();
+            //int[] tab = new int[100];
+            //for(int i = 0; i<tab.Length; i++)
+            //{
+            //    tab[i] = r.Next(-50, 50);
+            //}
+            //int[] x = Array.FindAll(tab, x => x > 0);
+            //int[] y = Array.FindAll(tab, y => y < 0);
+            //int[] z = Array.FindAll(tab, z => z % 2 == 0);
+            //int[] w = Array.FindAll(tab, w => w % 2 != 0);
+            //Console.WriteLine("Dodatnich: {0} \t Ujemnych: {1} \t Parzystych: {2} \t Nieparzyste: {3}", x.Length, y.Length, z.Length, w.Length);
 
+            //z5
+            //Random r = new Random();
+            //int[] tab = new int[100];
+            //for (int i = 0; i < tab.Length; i++)
+            //{
+            //    tab[i] = r.Next(1, 100);
+            //}
+            //for (int j = 0; j < tab.Length; j++)
+            //{
+            //    int[] x = Array.FindAll(tab, x => x == tab[j]);
+            //    if (x.Length == 1)
+            //    {
+            //        Console.WriteLine("Raz wystąpiło: {0}", x[0]);
+            //    }
+            //}
+
+            //z6
+            //Random r = new Random();
+            //int[] tab = new int[100];
+            //for (int i = 0; i < tab.Length; i++)
+            //{
+            //    tab[i] = r.Next(1, 100);
+            //}
+            //int wyniknajw = 0;
+            //int wyniktmp = 0;
+            //for (int j = 0; j < tab.Length-1; j++)
+            //{
+            //    if (tab[j] < tab[j + 1])
+            //    {
+            //        wyniktmp++;
+            //        if (wyniknajw < wyniktmp)
+            //        {
+            //            wyniknajw = wyniktmp;
+            //        }
+            //    }
+            //    else
+            //    {
+            //        wyniktmp = 0;
+            //    }
+            //}
+            //Console.WriteLine(wyniknajw);
         }
     }
 }
