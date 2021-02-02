@@ -148,7 +148,7 @@ namespace program7
             //}
             //int wyniknajw = 0;
             //int wyniktmp = 0;
-            //for (int j = 0; j < tab.Length-1; j++)
+            //for (int j = 0; j < tab.Length - 1; j++)
             //{
             //    if (tab[j] < tab[j + 1])
             //    {
