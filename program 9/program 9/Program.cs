@@ -9,64 +9,66 @@ namespace program_9
         static void Main(string[] args)
         {
             //z1
-            Console.Title = "z3";
-            List<char> spr = new List<char>();
-            char a;
-            while (char.TryParse(Console.ReadLine(), out a))
-            {
-                if (a != ' ')
-                {
-                    spr.Add(a);
-                }
-
-            }
-            List<char> spr2 = spr.ToList();
-            spr2.Reverse();
-            for (int i = 0; i < spr.Count; i++)
-            {
-                if (spr[i] == spr2[i])
-                {
-                    Console.WriteLine("ok  {0} : {1}", spr[i], spr2[i]);
-
-                }
-                else
-                {
-                    Console.WriteLine("nie ok  {0} : {1}", spr[i], spr2[i]);
-                    return;
-                }
-            }
-            //z1
-
-            //z2
-            //Console.Title = "z4";
-            //List<int> AAA = new List<int>();
-            //for (int i = 2; i <= 50; i++)
+            //Console.Title = "z3";
+            //List<char> spr = new List<char>();
+            //char a;
+            //while (char.TryParse(Console.ReadLine(), out a))
             //{
-            //    AAA.Add(i);
-            //}
-            //for (int j = 0; j < AAA.Count; j++)
-            //{
-
-            //    if (AAA[j] != -1)
+            //    if (a != ' ')
             //    {
-            //        if (AAA[j] > Math.Ceiling(Math.Sqrt(AAA.Count - 1)))
-            //        {
-            //            return;
-            //        }
-            //        for (int jj = j + 1; jj < AAA.Count; jj++)
-            //        {
-            //            if (AAA[jj] % AAA[j] == 0)
-            //            {
-            //                continue;
-            //            }
-            //            else
-            //            {
-            //                AAA[jj] = -1;
-            //            }
-            //        }
+            //        spr.Add(a);
             //    }
 
             //}
+            //List<char> spr2 = spr.ToList();
+            //spr2.Reverse();
+            //for (int i = 0; i < spr.Count; i++)
+            //{
+            //    if (spr[i] == spr2[i])
+            //    {
+            //        Console.ForegroundColor = ConsoleColor.Green;
+            //        Console.WriteLine("ok  {0} : {1}", spr[i], spr2[i]);
+
+            //    }
+            //    else
+            //    {
+            //        Console.ForegroundColor = ConsoleColor.Red;
+            //        Console.WriteLine("nie ok  {0} : {1}", spr[i], spr2[i]);
+            //        return;
+            //    }
+            //}
+            //z1
+
+            //z2
+            Console.Title = "z4";
+            List<int> AAA = new List<int>();
+            for (int i = 2; i <= 50; i++)
+            {
+                AAA.Add(i);
+            }
+            for (int j = 0; j < AAA.Count; j++)
+            {
+
+                if (AAA[j] != -1)
+                {
+                    if (AAA[j] > Math.Ceiling(Math.Sqrt(AAA.Count - 1)))
+                    {
+                        return;
+                    }
+                    for (int jj = j + 1; jj < AAA.Count; jj++)
+                    {
+                        if (AAA[jj] % AAA[j] == 0)
+                        {
+                            AAA[jj] = -1;
+                        }
+                        else
+                        {
+                            continue;
+                        }
+                    }
+                }
+
+            }
             //z2
             //z3
             //Console.Title = "z1";
